@@ -1,5 +1,5 @@
 # PLOT-CoOp
-This folder contains the implementation of the PLOT method with prompt learning tasks.
+This folder contains the implementation of the PLOT method on prompt learning.
 
 This code is built on top of [CoOp](https://github.com/KaiyangZhou/CoOp).
 
