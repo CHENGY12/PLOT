@@ -1,6 +1,4 @@
 # PLOT: Prompt Learning with Optimal Transport for Vision-Language Models
-[ICLR2023] PLOT: Prompt Learning with Optimal Transport for Vision-Language Models
-
 Created by [Guangyi Chen](https://chengy12.github.io/), [Weiran Yao](https://weirayao.github.io/), [Xiangchen Song](https://xiangchensong.github.io/), Xinyue Li, [Yongming Rao](https://raoyongming.github.io/), [Kun Zhang](https://www.andrew.cmu.edu/user/kunz1/)
 
 This repository contains PyTorch implementation for ICLR2023 spotlight paper __PLOT：Prompt Learning with Optimal Transport for Vision-Language Models__ [[arXiv]](https://arxiv.org/abs/2210.01253)
