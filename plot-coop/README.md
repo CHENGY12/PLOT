@@ -18,3 +18,24 @@ The running scripts are in `scripts/`. You can run the commands `bash main.sh DA
 `DATASET` takes as input a dataset name, like `caltech101`. 
 
 `N` is the number of prompts, such as `4`.
+
+### Results
+
+Same as CoOp, You can find the results from `output/` whose structure is
+
+```
+output
+|–– OP_N4/caltech101/
+|   |–– PLOT/
+|   |   |–– rn50_16shots/
+|   |   |   |–– nctx16_cscFalse_ctpend/
+|   |   |   |   |–– seed1/
+|   |   |   |   |–– seed2/
+|   |   |   |   |–– seed3/
+|   |   |–– rn50_8shots/
+|   |   |   |–– nctx16_cscFalse_ctpend/
+|   |   |   |   |–– seed1/
+|   |   |   |   |–– seed2/
+|   |   |   |   |–– seed3/
+```
+

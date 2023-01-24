@@ -7,7 +7,7 @@ DATA=your_data_path
 TRAINER=CoOp 
 
 DATASET=$1
-CFG=RN50  # config file
+CFG=rn50  # config file
 CTP=end  # class token position (end or middle)
 NCTX=16  # number of context tokens
 # SHOTS=$5  # number of shots (1, 2, 4, 8, 16)

@@ -203,9 +203,10 @@ class CustomCLIP(nn.Module):
         self.text_encoder = TextEncoder(clip_model)
         self.logit_scale = clip_model.logit_scale
         self.dtype = clip_model.dtype
-        self.device0 = torch.device("cuda:0")
-        self.device = torch.device("cuda")
+        self.device = torch.device("cuda:0")
+        self.device1 = torch.device("cuda")
         self.N = cfg.MODEL.N
+        self.dataset = cfg.DATASET.NAME
         self.use_uniform = True
         self.eps = 0.1
         self.max_iter = 100
@@ -237,10 +238,17 @@ class CustomCLIP(nn.Module):
 
         prompts = self.prompt_learner()   # b x 1024
         tokenized_prompts = self.tokenized_prompts
-        text_features = self.text_encoder(prompts, tokenized_prompts) # (N x 100) x 1024
-        text_features =  text_features.contiguous().view(self.N, self.n_cls, self.d)  # N c d=1024 
-        text_feature_pool = text_features.mean(dim=0)
+        if self.dataset == "ImageNet":
+            text_features = self.text_encoder(prompts.to(self.device1), tokenized_prompts.to(self.device1)) # (N x 100) x 1024
+            text_features = text_features.to(self.device)
+            text_features =  text_features.contiguous().view(self.N, self.n_cls, self.d)  # N c d=1024 
+            text_feature_pool = text_features.mean(dim=0)
+        else:
+            text_features = self.text_encoder(prompts, tokenized_prompts) # (N x 100) x 1024
+            text_features =  text_features.contiguous().view(self.N, self.n_cls, self.d)  # N c d=1024 
+            text_feature_pool = text_features.mean(dim=0)
 
+        
         image_features =  F.normalize(image_features, dim=2)  # N c d 
         image_feature_pool = F.normalize(image_feature_pool, dim=1)
         text_features = F.normalize(text_features, dim=2)
@@ -269,7 +277,8 @@ class CustomCLIP(nn.Module):
         logit_scale = self.logit_scale.exp()
         logits = logit_scale * image_feature_pool @ text_feature_pool.t()
         logits2 = logit_scale * sim_op
-        # logits2 = (logits2 + logits)
+        if self.dataset == "ImageNet":
+            logits2 = (logits2 + logits)
         return logits2
 
 
@@ -323,10 +332,10 @@ class PLOT(TrainerX):
 
         # Note that multi-gpu training could be slow because CLIP's size is
         # big, which slows down the copy operation in DataParallel
-        device_count = torch.cuda.device_count()
-        if device_count > 1:
-            print(f"Multiple GPUs detected (n_gpus={device_count}), use all of them!")
-            self.model = nn.DataParallel(self.model)
+        # device_count = torch.cuda.device_count()
+        # if device_count > 1:
+        #     print(f"Multiple GPUs detected (n_gpus={device_count}), use all of them!")
+        #     self.model = nn.DataParallel(self.model)
 
     def forward_backward(self, batch):
         image, label = self.parse_batch_train(batch)
