@@ -4,7 +4,7 @@ cd ..
 
 # custom config
 DATA=your_data_path
-TRAINER=CoOp 
+TRAINER=PLOT 
 
 DATASET=$1
 CFG=rn50  # config file
@@ -30,11 +30,11 @@ else
     --dataset-config-file configs/datasets/${DATASET}.yaml \
     --config-file configs/trainers/${TRAINER}/${CFG}.yaml \
     --output-dir ${DIR} \
-    TRAINER.COOP.N_CTX ${NCTX} \
-    TRAINER.COOP.CSC ${CSC} \
-    TRAINER.COOP.CLASS_TOKEN_POSITION ${CTP} \
+    TRAINER.PLOT.N_CTX ${NCTX} \
+    TRAINER.PLOT.CSC ${CSC} \
+    TRAINER.PLOT.CLASS_TOKEN_POSITION ${CTP} \
     DATASET.NUM_SHOTS ${SHOTS} \
-    MODEL.N ${N} 
+    TRAINER.PLOT.N ${N} 
 fi
 done
 done
