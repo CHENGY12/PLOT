@@ -1,6 +1,6 @@
 DATALOADER:
   TRAIN_X:
-    BATCH_SIZE: 128 #32 for small dataset such as FGVC_air
+    BATCH_SIZE: 128 
   TEST:
     BATCH_SIZE: 200
   NUM_WORKERS: 8

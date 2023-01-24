@@ -124,6 +124,9 @@ def setup_cfg(args):
     if cfg.DATASET.NAME== "ImageNet":
         cfg.OPTIM.MAX_EPOCH=50
 
+    if cfg.DATASET.NAME in ['OxfordFlowers','FGVCAircraft','StanfordCars']:
+        cfg.DATALOADER.TRAIN_X.BATCH_SIZE=32  #32 for small dataset such as Car,Air,Flowers
+
     cfg.freeze()
 
     

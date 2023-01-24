@@ -15,7 +15,6 @@ Please follow the instructions [DATASETS.md](https://github.com/KaiyangZhou/CoOp
 
 
 The running scripts are in `scripts/`. `cd ./scripts` and change the `your_data_path` and `your_work_path` in `scripts/main.sh`
-
 Then, you can run the commands `bash main.sh DATASET N` under `CoOp/scripts/`.
 
 `DATASET` takes as input a dataset name, like `caltech101`. 
