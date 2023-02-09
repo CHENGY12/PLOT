@@ -1,0 +1,26 @@
+# ------ root_path/dataset_name ------
+root_path: 'your/data/path'
+
+
+# ------ Load Cache and Features ------
+load_cache: False
+load_pre_feat: False
+
+# ------ Hyperparamters ------
+search_scale: [7, 10]
+search_step: [20, 200]
+
+init_beta: 1.4
+init_alpha: 1.4
+
+# ------ Basic Config ------
+
+dataset: 'fgvc'
+shots: 1
+backbone: 'RN50'
+
+thre: 0.3
+loop: False
+lr: 0.001
+augment_epoch: 10
+train_epoch: 20

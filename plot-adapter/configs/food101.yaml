@@ -1,0 +1,23 @@
+# ------ root_path/dataset_name ------
+root_path: 'your/data/path'
+
+load_cache: False
+load_pre_feat: False
+
+# ------ Hyperparamters ------
+search_scale: [10, 10]
+search_step: [20, 20]
+
+init_beta: 0.1
+init_alpha: 4.06
+
+# ------ Basic Config ------
+dataset: 'food101'
+shots: 1
+backbone: 'RN50'
+
+thre: 0.3
+loop: True
+lr: 0.001
+augment_epoch: 10
+train_epoch: 5

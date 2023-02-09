@@ -1,0 +1,25 @@
+# ------ root_path/dataset_name ------
+root_path: 'your/data/path'
+
+# ------ Load Cache and Features ------
+load_cache: False
+load_pre_feat: False
+
+# ------ Hyperparamters ------
+
+search_scale: [13, 13]
+search_step: [200, 20]
+
+init_beta: 0.1
+init_alpha: 7.2
+
+# ------ Basic Config ------
+dataset: 'dtd'
+shots: 1
+backbone: 'RN50'
+
+thre: 0.3
+loop: False
+lr: 0.001
+augment_epoch: 10
+train_epoch: 20

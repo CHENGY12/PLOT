@@ -97,16 +97,16 @@ class PromptLearner(nn.Module):
         self.ctx = nn.Parameter(ctx_vectors)  # to be optimized
         
 
-        classnames = [name.replace("_", " ") for name in classnames]   # 100
+        classnames = [name.replace("_", " ") for name in classnames]   
         name_lens = [len(_tokenizer.encode(name)) for name in classnames]
-        prompts = [prompt_prefix + " " + name + "." for name in classnames] # 100
+        prompts = [prompt_prefix + " " + name + "." for name in classnames]
 
-        tokenized_prompts = torch.cat([clip.tokenize(p) for p in prompts])   # 100x77
-        tokenized_prompts = tokenized_prompts.repeat(self.N,1) #  (N*100) * 77
+        tokenized_prompts = torch.cat([clip.tokenize(p) for p in prompts])   
+        tokenized_prompts = tokenized_prompts.repeat(self.N,1) 
         # tokenized_prompts3.view(3,100,77)
 
         with torch.no_grad():
-            embedding = clip_model.token_embedding(tokenized_prompts).type(dtype) # 100x77x512
+            embedding = clip_model.token_embedding(tokenized_prompts).type(dtype) 
         
 
         # These token vectors will be saved when in save_model(),
@@ -126,9 +126,9 @@ class PromptLearner(nn.Module):
        
         ctx = self.ctx
         if ctx.dim() == 3:
-            ctx = ctx.unsqueeze(0).expand(self.n_cls, -1, -1,-1) # 100 N 32 512
+            ctx = ctx.unsqueeze(0).expand(self.n_cls, -1, -1,-1) 
         
-        ctx = ctx.permute(1, 0, 2, 3) #  N 100 32 512
+        ctx = ctx.permute(1, 0, 2, 3) 
         ctx = ctx.contiguous().view(self.N*self.n_cls,self.n_ctx,ctx.shape[3])
 
         prefix = self.token_prefix
@@ -232,29 +232,29 @@ class CustomCLIP(nn.Module):
         b = image.shape[0]
         image_features = self.image_encoder(image.type(self.dtype))  
         image_feature_pool = image_features[0]
-        image_features = image_features[1:]  # M x b x 1024 
+        image_features = image_features[1:]  
         M = image_features.shape[0]
         self.d = image_features.shape[-1]
 
-        prompts = self.prompt_learner()   # b x 1024
+        prompts = self.prompt_learner()   
         tokenized_prompts = self.tokenized_prompts
         if self.dataset == "ImageNet":
-            text_features = self.text_encoder(prompts.to(self.device1), tokenized_prompts.to(self.device1)) # (N x 100) x 1024
+            text_features = self.text_encoder(prompts.to(self.device1), tokenized_prompts.to(self.device1)) 
             text_features = text_features.to(self.device)
-            text_features =  text_features.contiguous().view(self.N, self.n_cls, self.d)  # N c d=1024 
+            text_features =  text_features.contiguous().view(self.N, self.n_cls, self.d)  
             text_feature_pool = text_features.mean(dim=0)
         else:
-            text_features = self.text_encoder(prompts, tokenized_prompts) # (N x 100) x 1024
-            text_features =  text_features.contiguous().view(self.N, self.n_cls, self.d)  # N c d=1024 
+            text_features = self.text_encoder(prompts, tokenized_prompts) 
+            text_features =  text_features.contiguous().view(self.N, self.n_cls, self.d)  
             text_feature_pool = text_features.mean(dim=0)
 
         
-        image_features =  F.normalize(image_features, dim=2)  # N c d 
+        image_features =  F.normalize(image_features, dim=2) 
         image_feature_pool = F.normalize(image_feature_pool, dim=1)
         text_features = F.normalize(text_features, dim=2)
         text_feature_pool = F.normalize(text_feature_pool, dim=1)
 
-        sim = torch.einsum('mbd,ncd->mnbc', image_features, text_features).contiguous()  # M N B C
+        sim = torch.einsum('mbd,ncd->mnbc', image_features, text_features).contiguous()  
         sim = sim.view(M,self.N,b*self.n_cls)
         sim = sim.permute(2,0,1)
         wdist = 1.0 - sim

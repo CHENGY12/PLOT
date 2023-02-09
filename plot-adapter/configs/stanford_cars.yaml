@@ -1,0 +1,26 @@
+# ------ root_path/dataset_name ------
+root_path: 'your/data/path'
+
+
+# ------ Load Cache and Features ------
+load_cache: False
+load_pre_feat: False
+
+# ------ Hyperparamters ------
+search_scale: [20, 10]
+search_step: [200, 20]
+
+init_beta: 0.1
+init_alpha: 8
+
+# ------ Basic Config ------
+dataset: 'stanford_cars'
+shots: 1
+backbone: 'RN50'
+
+
+thre: 0.3
+loop: False
+lr: 0.001
+augment_epoch: 10
+train_epoch: 20
