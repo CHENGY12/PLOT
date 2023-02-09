@@ -13,7 +13,7 @@ Please follow the instructions [DATASETS.md](https://github.com/KaiyangZhou/CoOp
 
 ## Build Caches
 Change the data root path in `configs/dataset.yaml` to your own path
-Please feel free to download the cached model [here](https://drive.google.com/file/d/1B3BNfFKwFciDwR9uwohAh0IxmxWAo5B9/view?usp=sharing). Extract the pretrained models of each datasets and put them into caches folder, whose structure is
+Please feel free to download the cached models [here](https://drive.google.com/file/d/1B3BNfFKwFciDwR9uwohAh0IxmxWAo5B9/view?usp=sharing). Extract the pretrained models of each datasets and put them into caches folder, whose structure is
 
 ```
 plot-adapter
