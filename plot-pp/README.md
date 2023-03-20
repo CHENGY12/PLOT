@@ -62,9 +62,9 @@ output_joint
 |   |   |   |   |–– seed2/
 |   |   |   |   |–– seed3/
 ```
-Results reported below show accuracy across 11 recognition datasets averaged over 1 2 4 8 16 shots, you can download corresponding vision-only models and joint-train models through links given in last 2 columns.
+Results reported below show accuracy across 11 recognition datasets averaged over 1 2 4 8 16 shots, you can download corresponding vision-only models (stage1) and joint-train models (stage2) through links given in last 2 columns.
 
-| Dataset      | 1shots | 2shots | 4shots | 8shots | 16shots | vision-only                                | joint                                       |
+| Dataset      | 1shots | 2shots | 4shots | 8shots | 16shots | stage1                                | stage2                                       |
 |------------  |:-----:|:-----:|:-----:|:-----:|:-----:|:-----------:|:--------------------------------------------------------------------------:|
 | Caltech101   | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |                                  |                                          | 
 | DTD          | 54.57 | 56.72 | 62.43 | 66.49 | 71.43 |                                  |                                          | 
