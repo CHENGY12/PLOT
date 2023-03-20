@@ -66,4 +66,17 @@ output_joint
 ## Evaluation
 
 
-You can use `/scripts/evaluation.sh` to reproduce `PLOT++` by loading our realeased model. You should firstly change `your_data_path`, `your_pretrain_path` and `your_work_path` in `scripts/evaluation.sh`, then you can run the command `bash evaluation.sh DATASET M` under `plot-pp/scripts/`. For example `bash evaluation.sh imagenet 4`.
+We provided first stage models and second stage models for each dataset with 16 shots. You can use `/scripts/evaluation.sh` to evaluate `PLOT++` by loading our [released models](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EkruysJGUtRDkxUDb11a4p8BbFyAjVIdAqDJ1KSO9M5Q9A?e=8bgtnP), whose structure is
+
+```
+plot-pp_models
+|–– caltech101/
+|   |–– stage1/
+|   |   |–– seed1/
+|   |–– stage2/
+|   |   |–– seed1/
+|   |   |–– seed2/
+|   |   |–– seed3/
+```
+
+To evaluate the first-stage models, you should firstly gain the first-stage model, and store it in `your_pretrain_path`, change `your_data_path`, `your_pretrain_path` and `your_work_path` in `scripts/evaluation.sh`, then you can run the command `bash evaluation.sh DATASET 4` under `plot-pp/scripts/`. For example `bash evaluation.sh imagenet 4`. To evaluate the second-stage models, you should firstly gain the second-stage model and repeat what you do when evaluating the first-stage model.
