@@ -17,6 +17,10 @@ News: PLOT can support the VIT-B/16 backbone and obtain the average 1 shot perfo
 
 See [PLOT-Adapter](plot-adapter/).
 
+## PLOT for Multi-modal Prompt Learning
+
+See [PLOT-PP](plot-pp/).
+
 ## License
 MIT License
 
