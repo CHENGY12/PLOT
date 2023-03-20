@@ -62,6 +62,21 @@ output_joint
 |   |   |   |   |–– seed2/
 |   |   |   |   |–– seed3/
 ```
+Results reported below show accuracy across 11 recognition datasets averaged over 1 2 4 8 16 shots, you can download corresponding vision-only models and joint-train models through links given in last 2 columns.
+
+| Dataset      | 1shots | 2shots | 4shots | 8shots | 16shots | vision-only                                | joint                                       |
+|------------  |:-----:|:-----:|:-----:|:-----:|:-----:|:-----------:|:--------------------------------------------------------------------------:|
+| Caltech101   | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |                                  |                                          | 
+| DTD          | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |                                  |                                          | 
+| EuroSAT      | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |                                  |                                          | 
+| FGVCAircraf  | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |                                  |                                          | 
+| Flowers102   | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |                                  |                                          | 
+| FOOD101      | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |                                  |                                          | 
+| ImageNet     | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |                                  |                                          | 
+| OxfordPets   | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |                                  |                                          | 
+| StanfordCars | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |                                  |                                          | 
+| Caltech101 | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |                                  |                                          | 
+| Caltech101 | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |                                  |                                          | 
 
 ## Evaluation
 
