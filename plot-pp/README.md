@@ -62,7 +62,11 @@ output_joint
 |   |   |   |   |–– seed2/
 |   |   |   |   |–– seed3/
 ```
-Results reported below show accuracy across 11 recognition datasets averaged over 1 2 4 8 16 shots, you can download corresponding vision-only models (stage1) and joint-train models (stage2) through links given in last 2 columns.
+
+
+## Evaluation
+
+Results reported below show accuracy across 11 recognition datasets averaged over 1 2 4 8 16 shots, you can download corresponding vision-only models (stage1) and joint-train models (stage2) through links given in corresponding columns.
 
 | Dataset      | 1shots | links | 2shots | links | 4shots | links | 8shots | links | 16shots | links |
 |------------  |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
@@ -78,10 +82,7 @@ Results reported below show accuracy across 11 recognition datasets averaged ove
 | SUN397       | 66.77 | [stage1](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/Eox7-PHkpS9Kj3At3F9kOIgBo55a6rlMztK0WVmb8AqH6Q?e=LsmjKU);[stage2](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EkRj26hWy8ZJqr0XsQ0Pn3IB09Qsd762Dhw1M0dmosztnQ?e=ANIR8n) | 68.06 | [stage1](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EirZulcM6NtIlXov02Nsr0gB_qFwH7QQAa4e7F7Gf3kYyg?e=xRVKVu);[stage2](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EmGOkVw2QWhBujzLwWZ7-qsBYspdaQmch2ckT0MK0nnH4A?e=htuctW) | 71.73 | [stage1](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/Ej-_h7r1F29CleIBPQuITFMBwbg91gQ0e3y1mHYh8PFjvg?e=0Mc1IR);[stage2](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EqE2REbBrHZHikp-g9nJU0kBStvrXWIHZvzudiXC56kggw?e=EEbIIv) | 73.93 | [stage1](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EnG8rEdAfctFgcxAABKkTu0BtD-6gbBVgBOteTbV7jF0Ng?e=jbgdYg);[stage2](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EiDjplhpNa5AvlIuKjuKC-UBHRbeMXhnBomRIMjT9zS8iw?e=YBB7vL) | 76.03 | [stage1](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/Euv47CP62nhGj9fOp4sfuogB_Ha8sp9EzVAQ0mFseAOakg?e=y62ZVp);[stage2](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EvM4o7r0sJtGnjSOr7bDpfsByJhZvfggCyC6mTt8j5dYWg?e=UZD8GE) |
 | UCF101       | 74.31 | [stage1](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EuQBIPsyRl5Epyi91thplp8BXS5qF1l3DubH9sN9vOS_1g?e=N7zsSF);[stage2](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/Ejvmhd_Pj81AvszswfxYHeMBpq5uV17vlfge6lM2iH_0Tw?e=TPOz93) | 76.76 | [stage1](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/Ekj3_hs2t9BJmG-FQ8EjyT4BYnTAj0iJp7k5qtpanK48QQ?e=BB5FCt);[stage2](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EpqAQvlPNtZErn7tGp_Yo78BrZ0FjUqblK5GwekU-PbC7g?e=0fe3tZ) | 79.76 | [stage1](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/El7mhpsQQsZMkTdqTYrKs6IBDChbLhLSMhQkYsBAalty1A?e=Muj1kh);[stage2](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/ErU_5p1bw6JOtrnBHb4Ku8ABrDAJDMtqwu2U3I0ouTqORw?e=Ekp3T8) | 82.80 | [stage1](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EpgV8HYNO4dHh5B0f3kEPHsBKF8ZKCgzYFMLRy1HT4YAfQ?e=RZBzuV);[stage2](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EozWJwtFDwxFj1V-gDM22d4BAz1WL9KDpIiA-Iv_NxW-HQ?e=2THhhJ) | 85.34 | [stage1](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/ErQiI63suyxHudd8ckE3sCoBNi-h2vCwPBjbdjCqZvSQfg?e=iJCvKn);[stage2](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/EmSXXPW8-iVHs1Ax-eAGKdkBc-OaBbplSg3cKVHFpcSWww?e=K9b2OV) |
 
-## Evaluation
-
-
-We provided first stage models and second stage models for each dataset with 16 shots. You can use `/scripts/evaluation.sh` to evaluate `PLOT++` by loading our [released models](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/Evwfz9JwqxZDuSEuSC6QSEwBMx_Old9XJ4zziZEXpwQnIw?e=s55Ezl), whose structure is
+You can use `/scripts/evaluation.sh` to evaluate `PLOT++` by loading our released models from links shown above, whose structure is
 
 ```
 plot++_models
@@ -95,4 +96,4 @@ plot++_models
 |   |   |–– |–– seed3/
 ```
 
-To evaluate the first-stage models, you should firstly gain the first-stage model, and store it in `your_pretrain_path`, change `your_data_path`, `your_pretrain_path` and `your_work_path` in `scripts/evaluation.sh`, then you can run the command `bash evaluation.sh DATASET 4` under `plot-pp/scripts/`. For example `bash evaluation.sh imagenet 4`. To evaluate the second-stage models, you should firstly gain the second-stage model and repeat what you do when evaluating the first-stage model.
+To evaluate the first-stage models, you should firstly gain the stage1 model, and store it in `your_pretrain_path`, change `your_data_path`, `your_pretrain_path` and `your_work_path` in `scripts/evaluation.sh`, then you can run the command `bash evaluation.sh DATASET 4` under `plot-pp/scripts/`. For example `bash evaluation.sh imagenet 4`. To evaluate the stage2 models, you should firstly gain the second-stage model and repeat what you do when evaluating the first-stage model.
