@@ -66,17 +66,17 @@ Results reported below show accuracy across 11 recognition datasets averaged ove
 
 | Dataset      | 1shots | links | 2shots | links | 4shots | links | 8shots | links | 16shots | links |
 |------------  |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| Caltech101   | 93.14 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 96.04 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
-| DTD          | 54.57 | [stage1]();[stage2]() | 62.43 | [stage1]();[stage2]() | 71.43 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
-| EuroSAT      | 65.41 | [stage1]();[stage2]() | 83.21 | [stage1]();[stage2]() | 92.00 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
-| FGVCAircraft | 28.60 | [stage1]();[stage2]() | 35.29 | [stage1]();[stage2]() | 46.74 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
-| Flowers102   | 80.48 | [stage1]();[stage2]() | 92.93 | [stage1]();[stage2]() | 97.56 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
-| FOOD101      | 86.16 | [stage1]();[stage2]() | 86.46 | [stage1]();[stage2]() | 87.11 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
-| ImageNet     | 66.45 | [stage1]();[stage2]() | 70.40 | [stage1]();[stage2]() | 72.60 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
-| OxfordPets   | 91.89 | [stage1]();[stage2]() | 92.55 | [stage1]();[stage2]() | 93.59 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
-| StanfordCars | 68.81 | [stage1]();[stage2]() | 76.25 | [stage1]();[stage2]() | 84.55 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
-| SUN397       | 66.77 | [stage1]();[stage2]() | 71.73 | [stage1]();[stage2]() | 76.03 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
-| UCF101       | 74.31 | [stage1]();[stage2]() | 79.76 | [stage1]();[stage2]() | 85.34 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
+| Caltech101   | 93.14 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.13 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() | 96.04 | [stage1]();[stage2]() |
+| DTD          | 54.57 | [stage1]();[stage2]() | 56.72 | [stage1]();[stage2]() | 62.43 | [stage1]();[stage2]() | 66.49 | [stage1]();[stage2]() | 71.43 | [stage1]();[stage2]() |
+| EuroSAT      | 65.41 | [stage1]();[stage2]() | 76.80 | [stage1]();[stage2]() | 83.21 | [stage1]();[stage2]() | 88.37 | [stage1]();[stage2]() | 92.00 | [stage1]();[stage2]() |
+| FGVCAircraft | 28.60 | [stage1]();[stage2]() | 31.14 | [stage1]();[stage2]() | 35.29 | [stage1]();[stage2]() | 41.42 | [stage1]();[stage2]() | 46.74 | [stage1]();[stage2]() |
+| Flowers102   | 80.48 | [stage1]();[stage2]() | 89.81 | [stage1]();[stage2]() | 92.93 | [stage1]();[stage2]() | 95.44 | [stage1]();[stage2]() | 97.56 | [stage1]();[stage2]() |
+| FOOD101      | 86.16 | [stage1]();[stage2]() | 86.33 | [stage1]();[stage2]() | 86.46 | [stage1]();[stage2]() | 86.58 | [stage1]();[stage2]() | 87.11 | [stage1]();[stage2]() |
+| ImageNet     | 66.45 | [stage1]();[stage2]() | 68.28 | [stage1]();[stage2]() | 70.40 | [stage1]();[stage2]() | 71.31 | [stage1]();[stage2]() | 72.60 | [stage1]();[stage2]() |
+| OxfordPets   | 91.89 | [stage1]();[stage2]() | 92.29 | [stage1]();[stage2]() | 92.55 | [stage1]();[stage2]() | 93.02 | [stage1]();[stage2]() | 93.59 | [stage1]();[stage2]() |
+| StanfordCars | 68.81 | [stage1]();[stage2]() | 73.17 | [stage1]();[stage2]() | 76.25 | [stage1]();[stage2]() | 81.26 | [stage1]();[stage2]() | 84.55 | [stage1]();[stage2]() |
+| SUN397       | 66.77 | [stage1]();[stage2]() | 68.06 | [stage1]();[stage2]() | 71.73 | [stage1]();[stage2]() | 73.93 | [stage1]();[stage2]() | 76.03 | [stage1]();[stage2]() |
+| UCF101       | 74.31 | [stage1]();[stage2]() | 76.76 | [stage1]();[stage2]() | 79.76 | [stage1]();[stage2]() | 82.80 | [stage1]();[stage2]() | 85.34 | [stage1]();[stage2]() |
 
 ## Evaluation
 
