@@ -66,7 +66,7 @@ Results reported below show accuracy across 11 recognition datasets averaged ove
 
 | Dataset      | 1shots | 2shots | 4shots | 8shots | 16shots |
 |------------  |:-----:|:-----:|:-----:|:-----:|:-----:|
-| Caltech101   | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |
+| Caltech101   | 93.14|| | 94.69 ||| 95.13 ||| 95.51 ||| 96.04 |||
 | DTD          | 54.57 | 56.72 | 62.43 | 66.49 | 71.43 |
 | EuroSAT      | 65.41 | 76.80 | 83.21 | 88.37 | 92.00 |
 | FGVCAircraft | 28.60 | 31.14 | 35.29 | 41.42 | 46.74 |
