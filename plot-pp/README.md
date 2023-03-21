@@ -64,19 +64,19 @@ output_joint
 ```
 Results reported below show accuracy across 11 recognition datasets averaged over 1 2 4 8 16 shots, you can download corresponding vision-only models (stage1) and joint-train models (stage2) through links given in last 2 columns.
 
-| Dataset      | 1shots | 2shots | 4shots | 8shots | 16shots |
-|------------  |:-----:|:-----:|:-----:|:-----:|:-----:|
-| Caltech101   | 93.14 | 94.69 | 95.13 | 95.51 | 96.04 |
-| DTD          | 54.57 | 56.72 | 62.43 | 66.49 | 71.43 |
-| EuroSAT      | 65.41 | 76.80 | 83.21 | 88.37 | 92.00 |
-| FGVCAircraft | 28.60 | 31.14 | 35.29 | 41.42 | 46.74 |
-| Flowers102   | 80.48 | 89.81 | 92.93 | 95.44 | 97.56 |
-| FOOD101      | 86.16 | 86.33 | 86.46 | 86.58 | 87.11 |
-| ImageNet     | 66.45 | 68.28 | 70.40 | 71.31 | 72.60 |
-| OxfordPets   | 91.89 | 92.29 | 92.55 | 93.02 | 93.59 |
-| StanfordCars | 68.81 | 73.17 | 76.25 | 81.26 | 84.55 |
-| SUN397       | 66.77 | 68.06 | 71.73 | 73.93 | 76.03 |
-| UCF101       | 74.31 | 76.76 | 79.76 | 82.80 | 85.34 |
+| Dataset      | 1shots | links | 2shots | links | 4shots | links | 8shots | links | 16shots | links |
+|------------  |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| Caltech101   | 93.14 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 96.04 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
+| DTD          | 54.57 | [stage1]();[stage2]() | 62.43 | [stage1]();[stage2]() | 71.43 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
+| EuroSAT      | 65.41 | [stage1]();[stage2]() | 83.21 | [stage1]();[stage2]() | 92.00 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
+| FGVCAircraft | 28.60 | [stage1]();[stage2]() | 35.29 | [stage1]();[stage2]() | 46.74 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
+| Flowers102   | 80.48 | [stage1]();[stage2]() | 92.93 | [stage1]();[stage2]() | 97.56 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
+| FOOD101      | 86.16 | [stage1]();[stage2]() | 86.46 | [stage1]();[stage2]() | 87.11 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
+| ImageNet     | 66.45 | [stage1]();[stage2]() | 70.40 | [stage1]();[stage2]() | 72.60 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
+| OxfordPets   | 91.89 | [stage1]();[stage2]() | 92.55 | [stage1]();[stage2]() | 93.59 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
+| StanfordCars | 68.81 | [stage1]();[stage2]() | 76.25 | [stage1]();[stage2]() | 84.55 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
+| SUN397       | 66.77 | [stage1]();[stage2]() | 71.73 | [stage1]();[stage2]() | 76.03 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
+| UCF101       | 74.31 | [stage1]();[stage2]() | 79.76 | [stage1]();[stage2]() | 85.34 | [stage1]();[stage2]() | 94.69 | [stage1]();[stage2]() | 95.51 | [stage1]();[stage2]() |
 
 ## Evaluation
 
