@@ -84,7 +84,7 @@ Results reported below show accuracy across 11 recognition datasets averaged ove
 We provided first stage models and second stage models for each dataset with 16 shots. You can use `/scripts/evaluation.sh` to evaluate `PLOT++` by loading our [released models](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/zhengqing_gao_mbzuai_ac_ae/Evwfz9JwqxZDuSEuSC6QSEwBMx_Old9XJ4zziZEXpwQnIw?e=s55Ezl), whose structure is
 
 ```
-plot-pp_models
+plot++_models
 |–– caltech101/
 |   |–– 1shots/
 |   |   |–– stage1/
