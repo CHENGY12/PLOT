@@ -23,7 +23,7 @@ Then, you can run the commands `bash main.sh DATASET N` under `CoOp/scripts/`.
 
 ### Results
 
-Same as CoOp, You can find the results from `output/` whose structure is
+Same as CoOp, you can find the results from `output/` whose structure is
 
 ```
 output
@@ -41,3 +41,12 @@ output
 |   |   |   |   |–– seed3/
 ```
 
+### Visualization
+
+If you would like to visualize the transport plan with the attention map. 
+Please use the following scripts to visualize one transport plan `T` ($T \in \mathcal{R}^{7\times7}$):
+```
+import cv2
+viz_atten = cv2.applyColorMap(T, cv2.COLORMAP_JET)  
+viz_atten_224 = cv2.resize(viz_atten, (224, 224), interpolation=cv2.INTER_CUBIC)
+```
