@@ -17,7 +17,7 @@ CSC=False  # class-specific context (False or True)
 
 for SHOTS in 1 2 4 8 16
 do
-for SEED in 1 2 3
+for SEED in 1
 do
 DIR=your_work_path/plot-pp/output_visiononly/OP_N${N}/${DATASET}/${TRAINER}/${CFG}_${SHOTS}shots/nctx${NCTX}_csc${CSC}_ctp${CTP}/seed${SEED}
 if [ -d "$DIR" ]; then
