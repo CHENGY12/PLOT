@@ -9,9 +9,11 @@ PLOT is a method to jointly learn multiple comprehensive prompts to describe div
 
 ## Updates
 
-We release a brief script for the [visulization](visualization.py).
+- **May 2023**:We release a brief script for the [visulization](visualization.py).
 
-PLOT can support the VIT-B/16 backbone and obtain the average 1 shot performance on 11 datasets as 70.6!  Please refer to [PLOT++](plot-pp/) for details.
+- **April 2023**: PLOT can further benifit from the initilization of ChatGPT and obtain the average 1 shot performance on 11 datasets as 71.7!  Code will come soon!
+
+- **March 2023**: PLOT can support the VIT-B/16 backbone now and obtain the average 1 shot performance on 11 datasets as 70.6!  Please refer to [PLOT++](plot-pp/) for details.
 
 
 ## PLOT for Prompt Learning  
