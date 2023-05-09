@@ -9,7 +9,7 @@ PLOT is a method to jointly learn multiple comprehensive prompts to describe div
 
 ## Updates
 
-We release a brief script for the [visulization](visualization.ipynd).
+We release a brief script for the [visulization](visualization.py).
 
 PLOT can support the VIT-B/16 backbone and obtain the average 1 shot performance on 11 datasets as 70.6!  Please refer to [PLOT++](plot-pp/) for details.
 
