@@ -9,7 +9,7 @@ PLOT is a method to jointly learn multiple comprehensive prompts to describe div
 
 ## Updates
 
-- **May 2023**: We release a brief script for the [visulization](visualization.py).
+- **May 2023**: We release a brief script for the [visualization](visualization.py).
 
 - **April 2023**: PLOT can further benifit from the initilization of ChatGPT and obtain the average 1 shot performance on 11 datasets as 71.7!  Code will come soon!
 
