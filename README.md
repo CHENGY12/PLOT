@@ -7,11 +7,17 @@ PLOT is a method to jointly learn multiple comprehensive prompts to describe div
 
 ![intro](figs/framework.png)
 
+## Updates
+
+We release a brief script for the visulization.
+
+PLOT can support the VIT-B/16 backbone and obtain the average 1 shot performance on 11 datasets as 70.6!  Please refer to [PLOT++](plot-pp/) for details.
+
+
 ## PLOT for Prompt Learning  
 
 See [PLOT-CoOp](plot-coop/).
 
-News: PLOT can support the VIT-B/16 backbone and obtain the average 1 shot performance on 11 datasets as 70.6!  Please refer to [PLOT++](plot-pp/) for details.
 
 ## PLOT for Adapter-based Methods
 
